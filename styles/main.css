@@ -108,6 +108,9 @@ a:focus {
   margin-bottom: 20px;
   font-size: 24px;
 }
+.hero-sub:after {
+  border: none;
+}
 /*------------- nav -------------*/
 .Navbar,
 footer {
@@ -189,7 +192,7 @@ footer {
 /*------------- main -------------*/
 main {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -377,7 +380,8 @@ p {
   text-align: left;
   list-style-type: none;
 }
-.ex-desc li {
+.ex-desc li,
+br {
   margin-bottom: 12px;
 }
 .exploit-logos {
@@ -418,38 +422,27 @@ p {
 }
 /*---------- testimonials ----------*/
 .test-wrapper {
-  margin: 20px;
-  margin-top: 0px;
-}
-.test-first::before {
-  border-top: 1px solid rgba(37, 28, 29, 0.7);
-  content: "";
-  display: block;
-  margin-left: 10%;
-  width: 80%;
+  margin: 24px 0;
+  padding: 0 10% 0;
 }
 .test-wrapper:after {
   border-bottom: 1px solid rgba(37, 28, 29, 0.7);
   content: "";
   display: block;
-  margin-left: 10%;
-  width: 80%;
+  /* margin-left: 10%;
+  width: 80%; */
 }
 .quote,
 .quoted {
   display: inline-block;
-  width: 60%;
+  /* width: 80%; */
   margin-left: auto;
   margin-right: auto;
 }
 .quote {
-  margin-top: 10px;
+  margin-top: 8px;
   margin-bottom: 10px;
-  font-size: 20px;
-}
-.quote:hover,
-.quote:focus {
-  font-size: 22px;
+  font-size: 18px;
 }
 .quoted {
   margin-top: 0px;
@@ -458,9 +451,24 @@ p {
 }
 .test-odd {
   text-align: left;
+  width: 90%;
+  margin: 0 10% 12px 0;
 }
 .test-even {
   text-align: right;
+  width: 90%;
+  margin: 0 0 12px 10%;
+}
+.quote-wrapper a {
+  padding: 8px;
+  border: 2px solid #ffffff;
+}
+.quote-wrapper a:hover,
+.quote-wrapper a:focus {
+  background-color: rgba(37, 28, 29, 1);
+  border: 2px solid rgba(37, 28, 29, 1);
+  border-radius: 30px;
+  color: #ffffff;
 }
 /*---------- footer ----------*/
 .footer {
